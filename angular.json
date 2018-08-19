@@ -107,6 +107,19 @@
             "main": "src/main.server.ts",
             "tsConfig": "src/tsconfig.server.json"
           }
+        },
+        "app-shell": {
+          "builder": "@angular-devkit/build-angular:app-shell",
+          "options": {
+            "browserTarget": "angular-pwa-sample:build",
+            "serverTarget": "angular-pwa-sample:server",
+            "route": "shell"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "angular-pwa-sample:build:production"
+            }
+          }
         }
       }
     },
